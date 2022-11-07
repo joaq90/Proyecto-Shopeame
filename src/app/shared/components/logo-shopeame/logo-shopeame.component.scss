@@ -1,0 +1,36 @@
+.c-biglogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p, h2 {
+    font-weight: 500;
+    font-family: Display;
+    font-size: 36px;
+    line-height: 36px;
+    color: #0C2146;
+  }
+
+  h2 {
+    padding-top: 8px;
+  }
+
+  &--logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(/s.JPG);
+  
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 2px;
+    margin: 10px;
+
+    p {
+      font-family: Display;
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}

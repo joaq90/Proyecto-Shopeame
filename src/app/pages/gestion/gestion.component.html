@@ -1,0 +1,37 @@
+<div class="c-container">
+  <div class="c-form">
+    <div class="c-form">
+      <h1>Creación/edición de productos</h1>
+      <form [formGroup]="productRegisterForm" (submit)="submitProducto()">
+        <div class="c-form--items">
+          <p>Nombre del producto: </p><input type="text" formControlName="name" placeholder="Ej: Camiseta blanca">
+          <app-error *ngIf="isSubmit" [errors]="productRegisterForm.controls['name'].errors"></app-error>
+        </div>
+        <div>
+          <p>Precio: </p><input type="text" formControlName="price" placeholder="Ej: 15.00€">
+          <app-error *ngIf="isSubmit" [errors]="productRegisterForm.controls['price'].errors"></app-error>
+        </div>
+        <div>
+          <p>Descripción: </p><input type="text" formControlName="description" placeholder="Ej: Camiseta blanca de ceda">
+          <app-error *ngIf="isSubmit" [errors]="productRegisterForm.controls['description'].errors"></app-error>
+        </div>
+        <div>
+          <p>Ruta de la imagen: </p><input type="text" formControlName="image" placeholder="Ej: http://camisetadeceda/img.jpg">
+          <app-error *ngIf="isSubmit" [errors]="productRegisterForm.controls['image'].errors"></app-error>
+        </div>
+        <div>
+          <p>Opiniones: </p><input type="text" formControlName="stars" placeholder="Ej: Valora tu opinión">
+          <app-error *ngIf="isSubmit" [errors]="productRegisterForm.controls['stars'].errors"></app-error>
+        </div>
+        <div class="c-form--button">
+          <button type="button" (click)="submitProducto()">Guardar</button>
+        </div>
+      </form>
+    </div>
+    <div class="c-form--border"></div>
+    <div class="c-form--show">
+      <h1>Vista previa del producto</h1>
+      <app-producto [product]=productRegisterForm.value></app-producto>
+    </div>
+  </div>
+</div>

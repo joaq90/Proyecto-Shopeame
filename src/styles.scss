@@ -1,1 +1,297 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+
+.active {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  padding-top: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 56px;
+
+  p {
+    color: #00579F;
+  }
+
+  .picture1 {
+    display: none;
+  }
+
+  .picture2 {
+    display: inline-block;
+  }
+}
+
+.picture1 {
+  display: inline-block;
+}
+
+.picture2 {
+  display: none;
+}
+
+/*.c-header {
+
+
+
+  &--bar {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--menu {
+    background-color: #FFC970;
+    justify-content: center;
+    align-items: center;
+
+    &--tabs {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}*/
+
+.c-tab {
+
+
+
+
+
+
+  img {
+    width: 20px;
+    height: 20px;
+    padding-top: 4px;
+
+  }
+
+  p {
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
+
+  a:hover {
+    color: #333333;
+  }
+
+}
+
+.c-biglogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p, h2 {
+    font-weight: 500;
+    font-family: Display;
+    font-size: 36px;
+    line-height: 36px;
+    color: #0C2146;
+  }
+
+  h2 {
+    padding-top: 8px;
+  }
+
+  &--logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(/Captura.JPG);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 2px;
+    margin: 10px;
+
+    p {
+      font-family: Display;
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
+
+
+
+
+
+.c-grid {
+  font-family: Inter;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  padding: 50px;
+  min-height: 69.6vh;
+  margin: 50px;
+
+
+  &--items {
+    background-color: white;
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &--buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0px 10px;
+      font-size: 10px;
+      padding: 4px;
+      width: 60px;
+    }
+  }
+}
+
+.c-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+
+  img {
+    height: 54px;
+    max-width: 60px;
+    margin: 6px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    height: 150px;
+    align-items: center;
+    display: flex;
+  }
+
+  &--edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.c-form {
+  padding: 0px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  p {
+    margin: 6px 0px;
+  }
+
+  input[type=text] {
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 518px;
+    height: 36px;
+    padding: 4px;
+  }
+
+  div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.c-button {
+  align-items: flex-end;
+  padding-top: 20px;
+
+  button {
+    width: 150px;
+    height: 32px;
+    border: 1px solid #F89F21;
+    background-color: #F89F21;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+  }
+}
+
+.c-editgrid {
+  font-family: Inter;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: #CCCCCC;
+  padding: 50px;
+  min-height: 69.6vh;
+
+  &--items {
+    padding: 20px 50px 50px 50px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 700;
+      margin: 10px 40px;
+    }
+
+    &--product {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
+  }
+}
+
+.c-border {
+  width: 1px;
+  height: 434px;
+  background-color: #F89F21;
+  margin: 0px 60px;
+}

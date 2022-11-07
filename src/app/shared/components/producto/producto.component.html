@@ -1,0 +1,11 @@
+<div class="product" >
+  <div class="c-card">
+    <img src="{{product.image}}" alt="">
+    <h3>{{product.name}}</h3>
+    <h2 *ngIf="product.price != ''">{{product.price}} €</h2>
+    <p>{{product.description}}</p>
+    <div class="g-primeng-stars" *ngIf="product.stars != -1">
+      <ngb-rating class= "g-primeng-stars" *ngIf="product.stars != undefined" [max]="5" [(rate)]="product.stars" [readonly]="true"></ngb-rating>
+    </div>
+  </div>
+</div>

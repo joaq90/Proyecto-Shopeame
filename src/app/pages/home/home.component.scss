@@ -1,0 +1,38 @@
+.c-home {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 4% 0px;
+  min-height: 53.8vh;
+}
+
+.c-textblock {
+  font-family: Inter;
+  margin: 10px;
+  max-width: 1000px;
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 10px 0px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.left {
+  text-align: left;
+}
